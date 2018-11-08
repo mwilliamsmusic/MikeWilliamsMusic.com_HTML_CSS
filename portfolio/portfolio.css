@@ -1,0 +1,97 @@
+.portHeader {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(94, 37, 255);
+    text-shadow: 2px 1px 2px #00c8d2;
+}
+
+.portGrid {
+    display: grid;
+
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: 400px;
+
+    grid-template-areas:
+            ". CSS CSS CSS CSS CSS CSS CSS CSS ."
+            ". Javascript Javascript Javascript Javascript Javascript Javascript Javascript Javascript .";
+}
+
+.sectionDiv{
+    width: 100%;
+    height:75px;
+    background-color: whitesmoke;
+    color: #fc071b;
+}
+
+.cssGridArea {
+    grid-area: CSS;
+}
+
+.javascriptGridArea {
+    grid-area: Javascript;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-image: linear-gradient(to right, rgb(255, 255, 255)30%, rgba(94, 37, 255, 0.4));
+border-radius: 10px;
+    color:rgb(15, 25, 165);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.7rem;
+    transition: 0.4s;
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: 2px 1px 2px #00c8d2;
+
+}
+
+ .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color:rgb(15, 25, 165);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+
+
+
+.panelTitle {
+    padding: 0 18px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(255, 255, 255)30%, rgba(94, 37, 255, 0.4));
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-family: 'Caveat', cursive;
+    font-size: 1.5rem;
+    color:  rgb(255,0,89);
+    text-shadow: 2px 1px 2px rgb(13, 21, 97);
+    word-wrap: break-word;
+
+}
+
+.spacer {
+    height: 20px;
+}
+
+@media screen and (min-width: 45rem) {
+    .panel {
+        font-size: 2rem;
+    }
+    .portHeader {
+        font-size: 3.125rem;
+    }
+    .accordion {
+        font-size: 2rem;
+    }
+}

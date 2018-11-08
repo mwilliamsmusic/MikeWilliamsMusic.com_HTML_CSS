@@ -1,0 +1,258 @@
+body {
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+.audioContainer {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas:
+
+
+            ". IES1 IES1 ."
+            ". ies1TL ies1TL ."
+            "spacer1 . . ."
+            ". IES2 IES2 ."
+            ". ies2TL ies2TL ."
+            "spacer2 . . ."
+            ". inReview inReview ."
+            ". inReviewTL inReviewTL ."
+            ". introSpacer introSpacer ."
+            ". intro intro .";
+}
+.introText {
+    font-family: 'Caveat', cursive;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    text-shadow: 2px 2px 1px rgb(11, 15, 56);
+}
+
+.intro {
+    background: linear-gradient(to bottom,rgba(252,7,27,.9)25%, rgba(255,2,24,0.7), rgba(70,29,165,.3),rgba(15, 25, 165,.02)98%) ; ;
+    word-wrap: break-word;
+    grid-area: intro;
+    width: 80%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin: auto;
+
+}
+
+.introSpacer {
+    height: 40px;
+    grid-area: introSpacer;
+}
+
+.photoContainer {
+
+    text-align: center;
+    padding: 10px 20px;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.5) 65% ,rgba(128,128,128,1));
+    background-color: white;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.8), 0 8px 22px 0 rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.fontMarker {
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(15, 25, 165);
+    font-size: 1.1rem;
+/*text-shadow: 1px 1px 1px rgb(255,0,89);*/
+text-shadow: 1px 1px 1px rgb(11, 15, 56);
+}
+
+.caveat {
+    font-family: 'Caveat', cursive;
+}
+
+.trackListingText {
+    /*   font-family: 'Permanent Marker', cursive;*/
+    font-family: 'Caveat', cursive;
+    color: white;
+    font-size: 1.1rem;
+    text-shadow: 2px 2px 1px rgb(11, 15, 56);
+}
+
+.IES1 {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.8), 0 8px 22px 0 rgba(0, 0, 0, 0.8);
+    margin-bottom: 25px;
+    margin: auto;
+    z-index: 3;
+    grid-area: IES1;
+
+}
+
+.IES1_trackListing {
+    background: linear-gradient(to left,rgba(252,7,27,.9)25%, rgba(255,2,24,0.7), rgba(70,29,165,.3),rgba(15, 25, 165,.02)98%) ;
+    word-wrap: break-word;
+    padding-right: 20px;
+    text-align: right;
+    grid-area: ies1TL;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.IES2 {
+    width: 100%;
+
+    background-color: white;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.8), 0 8px 22px 0 rgba(0, 0, 0, 0.8);
+    margin-bottom: 25px;
+    margin: auto;
+    z-index: 3;
+    grid-area: IES2;
+}
+.IES2_trackListing {
+    background: linear-gradient(to right,rgba(252,7,27,.9)25%, rgba(255,2,24,0.7), rgba(70,29,165,.3),rgba(15, 25, 165,.02)98%) ; ;
+    word-wrap: break-word;
+    padding-right: 20px;
+    margin-right: 20px;
+    grid-area: ies2TL;
+    width:100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.inReview {
+    width: 100%;
+
+    background-color: white;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.8), 0 8px 22px 0 rgba(0, 0, 0, 0.8);
+    margin-bottom: 25px;
+    margin: auto;
+    z-index: 3;
+    grid-area: inReview;
+}
+.inReview_trackListing {
+    background: linear-gradient(to left,rgba(252,7,27,.9)25%, rgba(255,2,24,0.7), rgba(70,29,165,.3),rgba(15, 25, 165,.02)98%) ;
+    word-wrap: break-word;
+    width: 100%;
+    padding-right: 20px;
+    text-align: right;
+    margin:auto;
+    grid-area: inReviewTL;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.spacer1 {
+    height: 25px;
+    grid-area: spacer1;
+}
+
+.spacer2 {
+    height: 25px;
+    grid-area: spacer2;
+}
+
+.spacer3 {
+    height: 10px;
+    grid-area: spacer3;
+}
+
+/* Media Queries */
+@media screen and (min-width: 48rem) {
+    .fontMarker {
+        font-size: 1.3rem;
+        text-shadow: 2px 2px 1px rgb(11, 15, 56);
+    }
+}
+@media screen and (min-width: 63rem) {
+
+    .trackListingText {
+
+        font-size: 1.4rem;
+
+    }
+    .fontMarker {
+        font-size: 1.5rem;
+        text-shadow: 1px 1px 1px rgb(11, 15, 56);
+    }
+    .introText {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 65rem) {
+    .audioContainer {
+        display: grid;
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: auto;
+        grid-template-areas:
+
+                ". IES1 ies1TL ."
+                "spacer1 . . ."
+                ". ies2TL IES2 ."
+                "spacer2 . . ."
+                ". inReview inReviewTL ."
+                "spacer3 . . . "
+                ". introSpacer introSpacer ."
+                ".intro intro ."
+    ;
+    }
+
+
+    .trackListingText {
+
+        font-size: 1.8rem;
+    }
+
+    .IES1 {
+        transform: rotate(-7deg);
+
+    }
+    .IES1_trackListing{
+        border-top-left-radius: 0px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 10px;
+    }
+    .IES2 {
+        transform: rotate(7deg);
+
+    }
+    .IES2_trackListing{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 0px;
+    }
+    .inReview {
+        transform: rotate(-7deg);
+
+    }
+    .inReview_trackListing{
+        border-top-left-radius: 0px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .spacer1 {
+        height: 50px;
+        grid-area: spacer1;
+    }
+
+    .spacer2 {
+        height: 80px;
+        grid-area: spacer2;
+    }
+
+    .spacer3 {
+        height: 30px;
+        grid-area: spacer3;
+    }
+
+    .introText {
+        font-size: 1.625rem;
+    }
+}

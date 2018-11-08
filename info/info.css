@@ -1,0 +1,91 @@
+body {
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.infoGrid {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: auto;
+    grid-template-areas:
+          
+            ". info info info info info info info info .";
+}
+
+.infoText {
+    background: linear-gradient(to bottom,rgba(252,7,27,.9)25%, rgba(255,2,24,0.7), rgba(70,29,165,.3),rgba(15, 25, 165,.02)98%) ;
+    word-wrap: break-word;
+    grid-area: info;
+    width: 100%;
+    font-family: 'Caveat', cursive;
+    color: white;
+    font-size: 1.25rem;
+    text-align: center;
+    margin: auto;
+    text-shadow: 2px 2px 1px rgb(11, 15, 56);
+    z-index: -12;
+	border-radius: 10px;
+}
+
+/*.pic {
+    background-image: url("../img/me2PS.jpg");
+    background-color: rgba(0,0,0,.6);
+    background-size: contain;
+    margin: auto;
+    height: 246px;
+    background-repeat: no-repeat;
+    width: 100%;
+    grid-area: pic;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin: auto;
+    background-position: center ;
+
+}*/
+.copyright {
+    font-size: .8rem;
+}
+
+/* Media Queries */
+@media screen and (min-width: 45rem) {
+    .infoGrid {
+        grid-template-areas:
+            
+                ". . info info info info info info . .";
+    }
+
+    .infoText {
+        font-size: 1.7rem;
+
+    }
+    .copyright
+    {
+        font-size: 1rem;
+    }
+
+    .infoText {
+        font-size: 2.0rem;
+    }
+@media screen and (min-width: 65rem) {
+    .infoGrid {
+        grid-template-areas:
+            
+                ". . info info info info info info . .";
+    }
+
+    .infoText {
+        font-size: 2rem;
+
+    }
+    .copyright
+    {
+        font-size: 1.1rem;
+    }
+
+    .infoText {
+        font-size: 2.5rem;
+    }
+}
